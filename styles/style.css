@@ -1,0 +1,233 @@
+/*  ________   _
+ * |  __ \  \ | |
+ * | |__| |  \| |
+ * |  _  / |\   | Author: Robson Niemeyer
+ * |_| \_\_| \__| https://mordenkainen.com
+ */
+
+:root {
+  --font-family-heading: system-ui, sans-serif;
+  --line-height-heading: 1.189207;
+  --font-family-body: system-ui, sans-serif;
+  --line-height-body: 1.681793;
+  --font-size-h1: 2rem;
+  --font-size-h2: 1.681793rem;
+  --font-size-h3: 1.414214rem;
+  --font-size-h4: 1.189207rem;
+  --font-size-small: 0.840896rem;
+  --background-color: lch(99 3 270);
+  --text-color: lch(3 3 270);
+  --border-color: lch(90 3 270);
+}
+
+*,
+::before,
+::after {
+  background-color: transparent;
+  border-width: 0;
+  box-sizing: border-box;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: var(--font-family-body);
+  line-height: var(--line-height-body);
+  min-height: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+header,
+main,
+.footnotes {
+  margin: 2rem 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 0 1rem;
+}
+
+h1 {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-h1);
+  font-weight: 700;
+  line-height: 1.189207;
+}
+
+h2 {
+  border-bottom: 1px solid var(--border-color);
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-h2);
+  font-weight: 700;
+  line-height: 1.189207;
+  margin: 2rem 0;
+  padding-bottom: 0.5rem;
+}
+
+h3 {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-h3);
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+h4 {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-h4);
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+h5 {
+  font-family: var(--font-family-heading);
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a:any-link {
+  color: lch(50 75 270);
+  text-decoration-line: none;
+  transition: color 250ms;
+}
+
+a:hover {
+  color: lch(60 75 270);
+}
+
+ol,
+ul {
+  list-style-position: inside;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+
+li {
+  margin: 0.5rem 0;
+}
+
+li p {
+  display: inline;
+}
+
+li ol,
+li ul {
+  margin-left: 2rem;
+}
+
+blockquote {
+  background-color: lch(93 3 270);
+  font-size: var(--font-size-small);
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+pre {
+  background-color: lch(93 3 270);
+  font-family: monospace;
+  font-size: var(--font-size-small);
+  margin-bottom: 1rem;
+  padding: 1rem;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+figure {
+  margin-bottom: 1rem;
+}
+
+figcaption {
+  font-size: var(--font-size-small);
+  text-align: center;
+}
+
+strong,
+.text-bold {
+  font-weight: 700;
+}
+
+em,
+.text-italic {
+  font-style: italic;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-small {
+  font-size: var(--font-size-small);
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+img {
+  display: block;
+  height: auto;
+  image-rendering: smooth;
+  object-fit: cover;
+  width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid var(--border-color);
+  padding: 0.5rem;
+}
+
+th {
+  background-color: var(--border-color);
+  font-weight: 700;
+}
+
+hr {
+  border-bottom: 1px solid var(--border-color);
+  margin: 1rem 0;
+}
+
+p:last-child,
+ol:last-child,
+ul:last-child,
+li:last-child, 
+pre:last-child,
+table:last-child {
+  margin-bottom: 0;
+}
+
+.footnotes {
+  font-size: var(--font-size-small);
+}
+
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 20px;
+  }
+}
