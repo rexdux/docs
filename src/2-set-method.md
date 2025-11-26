@@ -42,10 +42,10 @@ Follow the recommended daily session and repeat.
 ::: {.table-wrapper}
 | Day | Max Strength I | Max Strength II | Strength Assistance I | Strength Assistance II |
 |:---|:---|:---|:---|:---|
-| **Push** | Dip | Incline chest press | Lateral raise | |
+| **Push** | Dip | Incline Chest Press | Lateral Raise | |
 | **Rest** | | | | |
-| **Pull** | Pull-up | Row | Wrist curl | |
-| **Leg** | Squat | Hip thrust | Hamstring curl | Calf raise |
+| **Pull** | Pull-Up | Row | Wrist Curl | |
+| **Leg** | Squat | Hip Thrust | Hamstring Curl | Calf Raise |
 | **Rest** | | | | |
 :::
 
