@@ -26,6 +26,6 @@ title: "Gym Training"
 ## Instructions
 
 - **Activation**: 2 isometric sets of 15–20 s at max tension. Rest 30 s after each set.
-- **Max Strength**: 2 sets of 6–9 reps with 0 RIR. Rest 5 min after each set.
+- **Max Strength**: 2 sets of 5–7 reps to failure. Rest 5 min after each set.
 - **Strength Assistance**: 3 sets of 10–12 reps with 1–2 RIR. Rest 3 min after each set.
 - **Skill Unlock** / **High-Intensity Cardio**: 10–15 min.
