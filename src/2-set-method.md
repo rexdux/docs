@@ -16,10 +16,12 @@ If you can't do bodyweight pull-ups or dips, start with negative, band-assisted 
 
 Perform 3–5 min of dynamic stretching, followed by 2 warm-up sets. Rest 3–4 min after each set.
 
+::: {.table-wrapper}
 | Level | Set I | Set II |
 |:---|:---|:---|
 | **Beginner** | 5 band-assisted or machine-assisted reps | 5 bodyweight reps |
 | **Default** | 5 reps at a load strictly below 50% of the working-set weight | 5 reps at a load strictly below 75% of the working-set weight |
+:::
 
 ::: {.text-small}
 *Warm-up rule*: For each warm-up set, calculate the target percentage of your working-set load and select the closest available load strictly below that value, using the standard 2.5 kg increment scale.
@@ -37,6 +39,7 @@ If you're a beginner, start with weighted dips at 10 kg and weighted pull-ups at
 
 Follow the recommended daily session and repeat.
 
+::: {.table-wrapper}
 | Day | Max Strength I | Max Strength II | Strength Assistance I | Strength Assistance II |
 |:---|:---|:---|:---|:---|
 | **Push** | Dip | Incline chest press | Lateral raise | |
@@ -44,5 +47,6 @@ Follow the recommended daily session and repeat.
 | **Pull** | Pull-up | Row | Wrist curl | |
 | **Leg** | Squat | Hip thrust | Hamstring curl | Calf raise |
 | **Rest** | | | | |
+:::
 
 [^1]: *Progressive overload*: If you've exceeded the maximum number of reps in any exercise, increase the load by 2.5-5 kg in the next session.

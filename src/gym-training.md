@@ -4,6 +4,7 @@ title: "Gym Training"
 
 ## Man
 
+::: {.table-wrapper}
 | Day | Activation | Max Strength I | Max Strength II | Strength Assistance | Skill Unlock |
 |:---|:---|:---|:---|:---|:---|
 | **Lower Body** | Static Squat Hold | Squat | Romanian Deadlift | Seated Calf Raise | Toes-to-Bar |
@@ -11,9 +12,11 @@ title: "Gym Training"
 | **Rest** | | | | | |
 | **Upper Pull** | Active Hang | Pull-Up | Row | Wrist Curl | Muscle-Up |
 | **Rest** | | | | | |
+:::
 
 ## Woman
 
+::: {.table-wrapper}
 | Day | Activation | Max Strength I | Max Strength II | Strength Assistance | High-Intensity Cardio |
 |:---|:---|:---|:---|:---|:---|
 | **Lower Body** | Static Squat Hold | Squat | Hamstring Curl | Seated Calf Raise | Bike |
@@ -21,7 +24,7 @@ title: "Gym Training"
 | **Rest** | | | | | |
 | **Lower Body** | Glute Bridge Hold | Hip Thrust | Leg Press | Standing Calf Raise | Bike |
 | **Rest** | | | | | |
-
+:::
 
 ## Instructions
 
