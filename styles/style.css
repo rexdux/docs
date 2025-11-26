@@ -191,9 +191,14 @@ img {
   width: 100%;
 }
 
+.table-wrapper {
+  overflow-x: auto;
+}
+
 table {
   border-collapse: collapse;
   margin-bottom: 1rem;
+  min-width: 720px;
   width: 100%;
 }
 
