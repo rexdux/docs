@@ -1,5 +1,5 @@
 clean:
-	rm -f ./pages/*
+	rm -f ./index.html ./pages/*
 
 index:
 	sh ./generate-index.sh
