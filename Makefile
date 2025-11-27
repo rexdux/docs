@@ -1,7 +1,10 @@
-html:
-	sh ./generate-html.sh ./src/*
-
 clean:
 	rm -f ./pages/*
 
-all: clean html
+index:
+	sh ./generate-index.sh
+
+html:
+	sh ./generate-html.sh ./src/*
+
+all: clean index html
