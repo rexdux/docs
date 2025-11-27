@@ -193,6 +193,7 @@ img {
 
 .table-wrapper {
   overflow-x: auto;
+  width: 100%;
 }
 
 table {
