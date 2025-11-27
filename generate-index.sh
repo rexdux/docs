@@ -20,3 +20,11 @@ for f in "$src"/*.md; do
   # Append entry to index.md
   printf -- "- [%s](./pages/%s.html)\n" "$filetitle" "$filename" >> "$out"
 done
+
+# Sort alphabetically
+{
+  sed -n '1,5p' "$out"        # keep header untouched
+  sed -n '6,$p' "$out" | sort -f
+} > "$out.tmp"
+
+mv "$out.tmp" "$out"
