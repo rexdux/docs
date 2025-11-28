@@ -91,6 +91,10 @@ h1 {
   line-height: 1.189207;
 }
 
+header h1 + p {
+  margin-top: 0.5rem;
+}
+
 h2 {
   border-bottom: 1px solid var(--border-color);
   font-family: var(--font-family-heading);
