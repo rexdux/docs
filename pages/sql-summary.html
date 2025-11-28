@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>SQL Summary</title>
+  <link rel="preload" href="../styles/style.css" as="style" />
+  <link href="../styles/style.css" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div class="container text-center">
+      <h1 class="text-uppercase">SQL Summary</h1>
+      <p><strong></strong></p>
+    </div>
+  </header>
+  <main>
+    <section>
+      <div class="container">
+        <h2 id="commands">Commands</h2>
+        <table>
+        <colgroup>
+        <col style="width: 50%" />
+        <col style="width: 50%" />
+        </colgroup>
+        <thead>
+        <tr>
+        <th style="text-align: left;">Category</th>
+        <th style="text-align: left;">Commands</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td style="text-align: left;"><strong>DDL</strong></td>
+        <td style="text-align: left;">CREATE, ALTER, DROP, TRUNCATE,
+        COMMENT, RENAME</td>
+        </tr>
+        <tr>
+        <td style="text-align: left;"><strong>DML</strong></td>
+        <td style="text-align: left;">SELECT, INSERT, UPDATE, DELETE,
+        MERGE, CALL, EXPLAIN PLAN, LOCK TABLE</td>
+        </tr>
+        <tr>
+        <td style="text-align: left;"><strong>DCL</strong></td>
+        <td style="text-align: left;">GRANT, REVOKE</td>
+        </tr>
+        <tr>
+        <td style="text-align: left;"><strong>TCL</strong></td>
+        <td style="text-align: left;">COMMIT, ROLLBACK, SAVEPOINT, SET
+        TRANSACTION</td>
+        </tr>
+        </tbody>
+        </table>
+        <h2 id="operations">Operations</h2>
+        <table>
+        <thead>
+        <tr>
+        <th style="text-align: left;">Order</th>
+        <th style="text-align: left;">Operation</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td style="text-align: left;"><strong>5</strong></td>
+        <td style="text-align: left;">SELECT</td>
+        </tr>
+        <tr>
+        <td style="text-align: left;"><strong>7</strong></td>
+        <td style="text-align: left;">DISTINCT</td>
+        </tr>
+        <tr>
+        <td style="text-align: left;"><strong>1</strong></td>
+        <td style="text-align: left;">FROM</td>
+        </tr>
+        <tr>
+        <td style="text-align: left;"><strong>2</strong></td>
+        <td style="text-align: left;">WHERE</td>
+        </tr>
+        <tr>
+        <td style="text-align: left;"><strong>3</strong></td>
+        <td style="text-align: left;">GROUP BY</td>
+        </tr>
+        <tr>
+        <td style="text-align: left;"><strong>4</strong></td>
+        <td style="text-align: left;">HAVING</td>
+        </tr>
+        <tr>
+        <td style="text-align: left;"><strong>6</strong></td>
+        <td style="text-align: left;">ORDER BY</td>
+        </tr>
+        <tr>
+        <td style="text-align: left;"><strong>8</strong></td>
+        <td style="text-align: left;">LIMIT</td>
+        </tr>
+        </tbody>
+        </table>
+        <h2 id="optimization">Optimization</h2>
+        <ul>
+        <li>Use EXPLAIN ANALYZE</li>
+        <li>Create prepared statements</li>
+        <li>Create indexes</li>
+        <li>Create partitions by timestamp</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container text-center text-small">
+      <p>© Robson Niemeyer</p>
+    </div>
+  </footer>
+</body>
+</html>
