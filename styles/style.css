@@ -166,11 +166,13 @@ pre {
 }
 
 figure {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 figcaption {
   font-size: var(--font-size-small);
+  line-height: 1.189207;
+  margin-top: 0.5rem;
   text-align: center;
 }
 
