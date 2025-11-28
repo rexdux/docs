@@ -55,8 +55,7 @@ body {
 }
 
 header,
-main,
-.footnotes {
+main {
   margin: 2rem 0;
 }
 
@@ -238,6 +237,7 @@ table:last-child {
 
 .footnotes {
   font-size: var(--font-size-small);
+  margin-top: 2rem;
 }
 
 @media only screen and (min-width: 768px) {
