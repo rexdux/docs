@@ -54,9 +54,16 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-header,
+header {
+  padding: 2rem 0;
+}
+
 main {
-  margin: 2rem 0;
+  padding-bottom: 2rem;
+}
+
+.container > *:first-child {
+  margin-top: 0;
 }
 
 footer {
@@ -124,13 +131,12 @@ a:hover {
 
 ol,
 ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
   list-style-position: inside;
   margin-bottom: 1rem;
   margin-left: 1rem;
-}
-
-li {
-  margin: 0.5rem 0;
 }
 
 li p {
