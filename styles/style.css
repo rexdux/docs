@@ -59,7 +59,7 @@ header {
 }
 
 main {
-  padding-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .container > *:first-child {
