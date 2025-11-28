@@ -15,7 +15,8 @@
   --font-size-h3: 1.414214rem;
   --font-size-h4: 1.189207rem;
   --font-size-small: 0.840896rem;
-  --background-color: lch(99 3 270);
+  --background-color-body: lch(99 3 270);
+  --background-color-block: lch(93 3 270);
   --text-color: lch(3 3 270);
   --border-color: lch(90 3 270);
 }
@@ -38,25 +39,31 @@
 
 html {
   font-size: 16px
-  height: 100%;
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: var(--background-color);
+  background-color: var(--background-color-body);
   color: var(--text-color);
+  display: flex;
+  flex-direction: column;
   font-family: var(--font-family-body);
   line-height: var(--line-height-body);
-  min-height: 100%;
+  min-height: 100vh;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
 
 header,
 main,
-.footnotes,
-footer {
+.footnotes {
   margin: 2rem 0;
+}
+
+footer {
+  background-color: var(--background-color-block);
+  margin-top: auto;
+  padding: 2rem;
 }
 
 .container {
@@ -137,14 +144,14 @@ li ul {
 }
 
 blockquote {
-  background-color: lch(93 3 270);
+  background-color: var(--background-color-block);
   font-size: var(--font-size-small);
   margin-bottom: 1rem;
   padding: 1rem;
 }
 
 pre {
-  background-color: lch(93 3 270);
+  background-color: var(--background-color-block);
   font-family: monospace;
   font-size: var(--font-size-small);
   margin-bottom: 1rem;
