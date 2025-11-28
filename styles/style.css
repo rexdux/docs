@@ -54,13 +54,14 @@ body {
 
 header,
 main,
-.footnotes {
+.footnotes,
+footer {
   margin: 2rem 0;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: 1200px;
   padding: 0 1rem;
 }
 
