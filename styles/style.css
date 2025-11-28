@@ -54,6 +54,12 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+nav {
+  background-color: var(--background-color-block);
+  font-size: var(--font-size-small);
+  padding: 1rem 0;
+}
+
 header {
   padding: 2rem 0;
 }
