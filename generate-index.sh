@@ -4,26 +4,28 @@ src="./src"
 out="$src/index.md"
 
 {
-  echo '---'
-  echo 'title: "My Documents"'
-  echo 'subtitle: "A collection of various personal documents."'
-  echo '---'
+  echo "---"
+  echo "title: My Documents"
+  echo "subtitle: A collection of various personal documents."
+  echo "---"
   echo
 } > "$out"
 
 for f in "$src"/*.md; do
-  # Skip the generated index.md
   [ "$f" = "$out" ] && continue
   filename=$(basename "$f" .md)
-  filetitle=$(grep '^title:' "$f" | sed 's/.*"[ ]*\(.*\)[ ]*".*/\1/')
+  filetitle=$(grep '^title:' "$f" | sed 's/^title:[[:space:]]*//')
   [ -z "$filetitle" ] && filetitle="$filename"
-  # Append entry to index.md
-  printf -- "- [%s](./pages/%s.html)\n" "$filetitle" "$filename" >> "$out"
+  lang=$(grep '^lang:' "$f" | sed 's/^lang:[[:space:]]*//')
+  if [ -n "$lang" ] && [ "$lang" != "en-US" ]; then
+    printf -- "- [%s](./pages/%s.html){lang=%s}\n" "$filetitle" "$filename" "$lang" >> "$out"
+  else
+    printf -- "- [%s](./pages/%s.html)\n" "$filetitle" "$filename" >> "$out"
+  fi
 done
 
-# Sort alphabetically
 {
-  sed -n '1,5p' "$out"        # keep header untouched
+  sed -n '1,5p' "$out"
   sed -n '6,$p' "$out" | sort -f
 } > "$out.tmp"
 

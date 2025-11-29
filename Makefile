@@ -7,4 +7,4 @@ index:
 html:
 	sh ./generate-html.sh ./src/*
 
-all: clean index html
+all: index html
