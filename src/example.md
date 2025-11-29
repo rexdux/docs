@@ -1,7 +1,7 @@
 ---
-title: "Main Title"
-subtitle: "Optional subtitle."
-lang: "en-US"
+title: Example
+subtitle: Optional subtitle.
+lang: en-US
 ---
 
 ## Lorem Ipsum
