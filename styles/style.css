@@ -217,13 +217,13 @@ img {
 }
 
 .table-wrapper {
+  margin-bottom: 1rem;
   overflow-x: auto;
   width: 100%;
 }
 
 table {
   border-collapse: collapse;
-  margin-bottom: 1rem;
   min-width: 720px;
   width: 100%;
 }
@@ -249,7 +249,7 @@ ol:last-child,
 ul:last-child,
 li:last-child, 
 pre:last-child,
-table:last-child {
+.table-wrapper:last-child {
   margin-bottom: 0;
 }
 
