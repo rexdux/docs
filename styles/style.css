@@ -237,6 +237,7 @@ figcaption,
 .image-caption {
   font-size: var(--font-size-small);
   line-height: 1.189207;
+  margin: 0;
   text-align: center;
 }
 
