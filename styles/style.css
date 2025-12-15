@@ -1,0 +1,281 @@
+/*  ________   _
+ * |  __ \  \ | |
+ * | |__| |  \| |
+ * |  _  / |\   | Author: Robson Niemeyer
+ * |_| \_\_| \__| https://mordenkainen.com
+ */
+
+:root {
+  --font-family-heading: system-ui, sans-serif;
+  --line-height-heading: 1.189207;
+  --font-family-body: system-ui, sans-serif;
+  --line-height-body: 1.681793;
+  --font-size-h1: 2rem;
+  --font-size-h2: 1.681793rem;
+  --font-size-h3: 1.414214rem;
+  --font-size-h4: 1.189207rem;
+  --font-size-small: 0.840896rem;
+  --background-color-body: lch(99 3 270);
+  --background-color-block: lch(93 3 270);
+  --text-color: lch(3 3 270);
+  --border-color: lch(90 3 270);
+}
+
+*,
+::before,
+::after {
+  background-color: transparent;
+  border-width: 0;
+  box-sizing: border-box;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background-color-body);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-family-body);
+  line-height: var(--line-height-body);
+  min-height: 100vh;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+nav {
+  background-color: var(--background-color-block);
+  font-size: var(--font-size-small);
+  padding: 1rem 0;
+}
+
+header {
+  padding: 2rem 0;
+}
+
+main {
+  margin-bottom: 2rem;
+}
+
+.container > *:first-child {
+  margin-top: 0;
+}
+
+footer {
+  background-color: var(--background-color-block);
+  margin-top: auto;
+  padding: 2rem;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 1rem;
+}
+
+h1 {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-h1);
+  font-weight: 700;
+  line-height: 1.189207;
+}
+
+header h1 + p {
+  margin-top: 0.5rem;
+}
+
+h2 {
+  border-bottom: 1px solid var(--border-color);
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-h2);
+  font-weight: 700;
+  line-height: 1.189207;
+  margin: 2rem 0 1rem;
+  padding-bottom: 0.5rem;
+}
+
+h3 {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-h3);
+  font-weight: 700;
+  margin: 2rem 0 1rem;
+}
+
+h4 {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-h4);
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+h5 {
+  font-family: var(--font-family-heading);
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+a:any-link {
+  color: lch(50 75 270);
+  text-decoration-line: none;
+  transition: color 250ms;
+}
+
+a:hover {
+  color: lch(60 75 270);
+}
+
+ol,
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  list-style-position: inside;
+  margin: 1rem 0;
+  margin-left: 1rem;
+}
+
+li p {
+  display: inline;
+}
+
+li ol,
+li ul {
+  margin-left: 2rem;
+}
+
+blockquote {
+  background-color: var(--background-color-block);
+  font-size: var(--font-size-small);
+  margin: 1rem 0;
+  padding: 1rem;
+}
+
+pre {
+  background-color: var(--background-color-block);
+  font-family: monospace;
+  font-size: var(--font-size-small);
+  margin: 1rem 0;
+  padding: 1rem;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+.image-wrapper {
+  margin: 1rem 0 2rem;
+}
+
+figcaption {
+  font-size: var(--font-size-small);
+  line-height: 1.189207;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+strong,
+.text-bold {
+  font-weight: 700;
+}
+
+em,
+.text-italic {
+  font-style: italic;
+}
+
+.text-center {
+  text-align: center;
+}
+
+sup,
+sub,
+.footnote-ref,
+.text-small {
+  font-size: var(--font-size-small);
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+img {
+  display: block;
+  height: auto;
+  image-rendering: smooth;
+  object-fit: cover;
+  width: 100%;
+}
+
+.table-wrapper {
+  margin: 1rem 0;
+  overflow-x: auto;
+  width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  min-width: 720px;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid var(--border-color);
+  padding: 0.5rem;
+}
+
+th {
+  background-color: var(--border-color);
+  font-weight: 700;
+}
+
+hr {
+  border-bottom: 1px solid var(--border-color);
+  margin: 1rem 0;
+}
+
+p:first-child,
+ol:first-child,
+ul:first-child,
+li:first-child, 
+pre:first-child,
+.table-wrapper:first-child {
+  margin-top: 0;
+}
+
+p:last-child,
+ol:last-child,
+ul:last-child,
+li:last-child, 
+pre:last-child,
+.table-wrapper:last-child {
+  margin-bottom: 0;
+}
+
+.footnotes {
+  font-size: var(--font-size-small);
+  margin-top: 2rem;
+}
+
+.footnote-back::before {
+  content: " ";
+}
+
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 20px;
+  }
+}
