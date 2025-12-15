@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="$lang$">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>$title$</title>
+  $if(subtitle)$<meta name="description" content="$subtitle$">$endif$
+  <link rel="preload" href="../styles/style.css" as="style" />
+  <link href="../styles/style.css" rel="stylesheet" />
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <p><a href="https://mordenkainen.com/" class="text-bold text-uppercase">Mordenkainen</a> / <a href="../index.html" lang="en-US">My Documents</a> / $title$</p>
+    </div>
+  </nav>
+  <header>
+    <div class="container text-center">
+      <h1 class="text-uppercase">$title$</h1>
+      <p><strong>$subtitle$</strong></p>
+    </div>
+  </header>
+  <main>
+    <section>
+      <div class="container">
+        $if(image)$<div class="image-wrapper">
+          <figure>
+            <img src="$image.url$" alt="$image.caption$" />
+            <figcaption aria-hidden="true">$image.caption$</figcaption>
+          </figure>
+        </div>$endif$
+        $body$
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container text-center text-small">
+      <p><a href="../index.html" lang="en-US">My Documents</a></p>
+      <hr />
+      <p>© Mordenkainen | <a href="https://mordenkainen.com/">mordenkainen.com</a></p>
+    </div>
+  </footer>
+</body>
+</html>
