@@ -5,6 +5,12 @@
  * |_| \_\_| \__| https://mordenkainen.com
  */
 
+@keyframes fadein {
+  0% { opacity: .9; transform: scale(1) }
+  50% { opacity: 1; transform: scale(1.0625) }
+  100% { opacity: .9; transform: scale(1) }
+}
+
 :root {
   --font-family-heading: system-ui, sans-serif;
   --line-height-heading: 1.189207;
@@ -175,17 +181,6 @@ pre {
   word-break: break-all;
 }
 
-.image-wrapper {
-  margin: 1rem 0 2rem;
-}
-
-figcaption {
-  font-size: var(--font-size-small);
-  line-height: 1.189207;
-  margin-top: 0.5rem;
-  text-align: center;
-}
-
 strong,
 .text-bold {
   font-weight: 700;
@@ -211,12 +206,38 @@ sub,
   text-transform: uppercase;
 }
 
+.image-wrapper {
+  margin: 1rem 0 2rem;
+}
+
+figure > img,
+.image-frame {
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.image {
+  animation: 30s linear infinite fadein;
+  background-color: var(--background-color-block);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 600px;
+}
+
 img {
   display: block;
   height: auto;
   image-rendering: smooth;
   object-fit: cover;
   width: 100%;
+}
+
+figcaption,
+.image-caption {
+  font-size: var(--font-size-small);
+  line-height: 1.189207;
+  text-align: center;
 }
 
 .table-wrapper {
