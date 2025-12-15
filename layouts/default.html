@@ -24,12 +24,13 @@
   <main>
     <section>
       <div class="container">
-        $if(image)$<div class="image-wrapper">
-          <figure>
-            <img src="$image.url$" alt="$image.caption$" />
-            <figcaption aria-hidden="true">$image.caption$</figcaption>
-          </figure>
-        </div>$endif$
+        $if(image)$<div class="image-wrapper" aria-hidden="true">
+          <div class="image-frame">
+            <div id="image" class="image" data-image-url="$image.url$" /></div>
+          </div>
+        $if(image.caption)$<p class="image-caption" aria-hidden="true">$image.caption$</p>$endif$
+        </div>
+        $endif$
         $body$
       </div>
     </section>
@@ -40,6 +41,7 @@
       <hr />
       <p>© Mordenkainen | <a href="https://mordenkainen.com/">mordenkainen.com</a></p>
     </div>
+    <script src="../scripts/main.js" defer></script>
   </footer>
 </body>
 </html>
