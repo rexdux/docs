@@ -5,9 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="noindex, nofollow" />
   <title>$title$</title>
-  $if(subtitle)$<meta name="description" content="$subtitle$">$endif$
+  $if(subtitle)$<meta name="description" content="$subtitle$" />$endif$
   <link rel="preload" href="../styles/style.css" as="style" />
   <link href="../styles/style.css" rel="stylesheet" />
+  $if(image)$<meta property="og:title" content="$title$" />
+  $if(subtitle)$<meta name="og:description" content="$subtitle$" />$endif$
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mordenkainen.com/docs/pages/$permalink$.html" />
+  <meta property="og:image" content="$image.url$" />
+  <link rel="preload" as="image" href="$image.url$" />$endif$
 </head>
 <body>
   <nav>
