@@ -43,7 +43,7 @@ for filepath in "$@"; do
     if [ "$filename" != "index" ]; then
       # Generate the HTML in pages directory
       echo "Generating pages/${filename}.html"
-      pandoc "$filepath" -o "pages/${filename}.html" --template=layouts/default.html
+      pandoc "$filepath" -o "pages/${filename}.html" -V permalink="${filename}" --template=layouts/default.html
     fi
   fi
 done
