@@ -12,7 +12,7 @@
   $if(subtitle)$<meta name="og:description" content="$subtitle$" />$endif$
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://mordenkainen.com/docs/pages/$permalink$.html" />
-  <meta property="og:image" content="$image.url$" />
+  <meta property="og:image" content="https://mordenkainen.com/docs/images/$image.url$" />
   <link rel="preload" as="image" href="$image.url$" />$endif$
 </head>
 <body>
@@ -30,13 +30,12 @@
   <main>
     <section>
       <div class="container">
-        $if(image)$<div class="image-wrapper" aria-hidden="true">
+        $if(image)$<div class="image-group" aria-hidden="true">
           <div class="image-frame">
-            <div id="image" class="image" data-image-url="$image.url$" /></div>
+            <div id="image" class="image" data-image-url="../images/$image.url$"></div>
           </div>
-        $if(image.caption)$<p class="image-caption" aria-hidden="true">$image.caption$</p>$endif$
-        </div>
-        $endif$
+          $if(image.caption)$<p class="image-caption">$image.caption$</p>$endif$
+        </div>$endif$
         $body$
       </div>
     </section>
