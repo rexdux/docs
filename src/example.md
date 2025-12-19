@@ -1,9 +1,9 @@
 ---
 lang: "en-US"
 title: "Example"
-subtitle: "Optional subtitle."
+subtitle: "Optional Subtitle"
 image:
-  url: "https://picsum.photos/600/200?grayscale"
+  filename: "https://picsum.photos/600/200?grayscale"
   caption: "A placeholder image."
 updated_at: 2025-12-14
 ---
