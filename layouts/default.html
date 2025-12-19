@@ -12,8 +12,8 @@
   $if(subtitle)$<meta name="og:description" content="$subtitle$" />$endif$
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://mordenkainen.com/docs/pages/$permalink$.html" />
-  <meta property="og:image" content="https://mordenkainen.com/docs/images/$image.url$" />
-  <link rel="preload" as="image" href="$image.url$" />$endif$
+  <meta property="og:image" content="https://mordenkainen.com/docs/images/$image.filename$" />
+  <link rel="preload" as="image" href="../images/$image.filename$" />$endif$
 </head>
 <body>
   <nav>
@@ -32,7 +32,7 @@
       <div class="container">
         $if(image)$<div class="image-group" aria-hidden="true">
           <div class="image-frame">
-            <div id="image" class="image" data-image-url="../images/$image.url$"></div>
+            <div id="image" class="image" data-image-url="../images/$image.filename$"></div>
           </div>
           $if(image.caption)$<p class="image-caption">$image.caption$</p>$endif$
         </div>$endif$
